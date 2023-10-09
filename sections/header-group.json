@@ -57,7 +57,7 @@
           "type": "slide",
           "settings": {
             "id": "FAQs",
-            "display": false,
+            "display": true,
             "question": "Question",
             "answer": "FAQ can be pronounced as an initialism, \"F-A-Q\", or as an acronym, \"FAQ\". ... Web designers often label a single list of questions as a \"FAQ\", such as on Google ..."
           }
