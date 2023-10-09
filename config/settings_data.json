@@ -129,6 +129,22 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "FAQs": {
+        "type": "FAQs",
+        "blocks": {
+          "45d6585e-3739-45e6-870f-d43e828c2827": {
+            "type": "header",
+            "settings": {
+              "header": "FAQs"
+            }
+          }
+        },
+        "block_order": [
+          "45d6585e-3739-45e6-870f-d43e828c2827"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
