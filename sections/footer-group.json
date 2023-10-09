@@ -21,6 +21,7 @@
         },
         "3c785db5-807a-481e-846c-5d5fefe2965e": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image_width": 100,
             "alignment": "center"
