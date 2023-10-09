@@ -211,9 +211,7 @@
         endif
       endif
     %}
-      {% if section.settings.enable_FAQs == checked %}
-      {% include 'FAQs' %}
-     {% endif %}
+    
 
     {%- if section.settings.logo_position == 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
@@ -504,6 +502,10 @@
     }
   </script>
 {%- endif -%}
+
+  {% if section.settings.enable_FAQs == checked %}
+      {% include 'FAQs' %}
+     {% endif %}
 
 {% schema %}
 {
