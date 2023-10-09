@@ -16,9 +16,9 @@
 								<h4 class="panel-title">
 									{% if block.settings.display == true %}
 										<a role="button" data-toggle="collapse" href="#collapse-{{block.settings.id}}" aria-expanded="true" aria-controls="collapse-{{block.settings.id}}">
-									{% else %}
+									{% else %}</a>
 										<a role="button" data-toggle="collapse" href="#collapse-{{block.settings.id}}" aria-expanded="false" aria-controls="collapse-{{block.settings.id}}">
-									{% endif %}</a>
+									{% endif %}
 										{{block.settings.question}}
 									</a>
 								</h4>
