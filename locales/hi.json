@@ -1607,6 +1607,130 @@
         "sort_show_options_accessibility_label": "पुष्ट आदेशों के लिए क्रमबद्ध विकल्प दिखाएँ।",
         "sort_currently_sorted_by_accessibility_label": "वर्तमान में क्रमबद्ध: {{option}}"
       }
+    },
+    "order_details": {
+      "zero_duties_tooltip": "यह ऑर्डर दूसरे देश से भेजा जा रहा है. इस मूल्य के आदेशों पर शुल्क नहीं लिया जाता है।",
+      "tip": "बख्शीश",
+      "title": "आदेश {{name}}",
+      "total": "कुल",
+      "unit_price": "{{price}} \/ईए",
+      "pagination": {
+        "load_more": "और लोड करें",
+        "load_more_accessibility_label": "अधिक आइटम लोड करें",
+        "loading_accessibility_label": "आइटम लोड हो रहा है"
+      },
+      "login_to_view_all_order_details": "सभी ऑर्डर विवरण देखने के लिए लॉग इन करें।",
+      "log_in": "लॉग इन करें",
+      "logged_in_account_no_permission_to_order": "आप {{email}} के रूप में लॉग इन हैं। इस खाते को इस आदेश को प्रबंधित करने की अनुमति नहीं है.",
+      "log_in_to_a_different_account": "किसी भिन्न खाते में लॉग इन करें"
+    },
+    "addresses": {
+      "add_button": "पता जोड़ें",
+      "add_button_text": "जोड़ना",
+      "add_button_accessibility_label": "पता जोड़ें",
+      "back_button": "पीछे",
+      "back_button_accessibility_label": "संपादन पते {{address}} पर वापस जाएँ",
+      "add_address_banner": "चेकआउट के समय उपयोग करने के लिए पते जोड़ें",
+      "no_addresses_banner": "कोई पता नहीं जोड़ा गया",
+      "address_deleted_notification": "पता हटा दिया गया",
+      "cancel_adding_address_accessibility_label": "पता जोड़ना रद्द करें",
+      "cancel_deletion_button": "रद्द करना",
+      "cancel_deletion_button_accessibility_label": "{{address}} हटाना रद्द करें",
+      "default_address": {
+        "title": "डिफ़ॉल्ट पता",
+        "title_accessibility_label": "डिफ़ॉल्ट पता: {{address}}"
+      },
+      "delete_button": "मिटाना",
+      "delete_button_accessibility_label": "{{address}} हटाएं",
+      "delete_confirmation_button": "पता हटाएँ",
+      "delete_confirmation_button_accessibility_label": "{{address}} हटाएं",
+      "delete_confirmation_message": "पता हटाएं? मौजूदा आदेश प्रभावित नहीं होंगे.",
+      "delete_confirmation_title": "पता हटाएं?",
+      "delete_confirmation_description": "मौजूदा आदेश प्रभावित नहीं होंगे.",
+      "edit_button": "संपादन करना",
+      "edit_button_accessibility_label": "{{address}} संपादित करें",
+      "edit_section_accessibility_label": "{{address}} संपादित करें",
+      "edit_modal_title": {
+        "default": "पता संपादित करें",
+        "billing": "बिलिंग पता संपादित करें",
+        "shipping": "शिपिंग पता संपादित करें"
+      },
+      "loading_accessibility_message": "पता लोड हो रहा है",
+      "loading_addresses_accessibility_message": "पते लोड हो रहे हैं",
+      "loading_billing_accessibility_message": "बिलिंग पता लोड हो रहा है",
+      "loading_finished_accessibility_message": "पतों का नया पेज लोड हो गया है",
+      "loading_shipping_accessibility_message": "शिपिंग पता लोड हो रहा है",
+      "pagination": {
+        "load_more": "और लोड करें",
+        "load_more_accessibility_label": "अधिक पते लोड करें"
+      },
+      "save_new_address_accessibility_label": "पता सहेजें",
+      "title": "पतों",
+      "billing_address_dropdown_placeholder": "बिल भेजने का पता"
+    },
+    "address_form": {
+      "attention": "ध्यान",
+      "attention_help_text": "किसी व्यक्ति या विभाग का नाम",
+      "auto_complete_close_accessibility_label": "सुझाव बंद करें",
+      "auto_complete_title": "सुझाव",
+      "billing_address": "बिलिंग पते के रूप में उपयोग करें",
+      "cancel": "रद्द करना",
+      "cancel_accessibility_label": "संपादन पता रद्द करें {{address}}",
+      "creation_success_notification": "पता जोड़ा गया",
+      "default_address": "यह मेरा डिफ़ॉल्ट पता है",
+      "default_address_creation_success_notification": "डिफ़ॉल्ट पता जोड़ा गया",
+      "default_address_update_success_notification": "डिफ़ॉल्ट पता अपडेट किया गया",
+      "loading_add_form_accessibility_message": "नया पता प्रपत्र लोड हो रहा है",
+      "loading_edit_form_accessibility_message": "संपादन पता फ़ॉर्म लोड हो रहा है",
+      "loading_form_accessibility_message": "पता प्रपत्र लोड हो रहा है",
+      "loading_finished_accessibility_message": "पता प्रपत्र लोड हो गया है",
+      "save": "बचाना",
+      "save_accessibility_label": "पता सहेजें {{address}}",
+      "section_title_accessibility_label": "पता जोड़ें",
+      "update_success_notification": "पता अपडेट किया गया"
+    },
+    "B2B": {
+      "account_information": {
+        "company_card_name_label": "कंपनी का नाम",
+        "company_card_section_accessibility_label": "कंपनी"
+      },
+      "locations": {
+        "contact_email": "ईमेल",
+        "contact_list_title": "लोग",
+        "contact_name": "नाम",
+        "contact_permissions": "अनुमतियां",
+        "contact_phone_number": "फ़ोन नंबर",
+        "location_picker_label": "स्थान का नाम",
+        "location_picker_accessibility_label": "स्थान का नाम: {{locationName}}",
+        "net_payment_terms_description": "{{name}} : भुगतान {{numberOfDays}} दिनों के भीतर देय",
+        "own_role_contact_name": "आप",
+        "pagination": {
+          "load_more": "और लोड करें",
+          "load_more_accessibility_label": "अधिक स्थान लोड करें"
+        },
+        "payment_details_title": "भुगतान विवरण",
+        "payment_terms": "भुगतान की शर्तें",
+        "permissions_label": "आपकी अनुमतियाँ",
+        "permissions_title": "अनुमतियां",
+        "section_title": "जगह",
+        "shipping_address_required": "ऑर्डर देना शुरू करने के लिए इस स्थान पर एक शिपिंग पता जोड़ें।",
+        "staff_and_permissions_title": "कर्मचारी और अनुमतियाँ",
+        "tax_details_title": "कर विवरण",
+        "tax_id": "टैक्स आईडी",
+        "tax_exemptions": "कर छूट",
+        "multiple_tax_exemptions": "{{taxExemptionsCount}} और अधिक",
+        "multiple_tax_exemptions_and": "और",
+        "tax_exemptions_modal_close": "बंद करना",
+        "taxes_none": "कोई नहीं",
+        "tax_exemption_not_applicable": "एन\/ए",
+        "tax_exemptions_modal_button_accessibility_label": "सभी कर छूट देखें"
+      },
+      "location_selection": {
+        "continue_to_store": "संग्रह करना जारी रखें",
+        "description": "यदि आपके कार्ट में पहले से ही आइटम हैं, तो स्थान बदलने से कार्ट की कीमतें और मात्रा प्रभावित हो सकती हैं।",
+        "list_accessibility_label": "स्थानों की सूची",
+        "list_item_without_address_accessibility_label": "{{name}} : कोई पता नहीं"
+      }
     }
   },
   "customer": {
