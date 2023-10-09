@@ -43,10 +43,16 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "4eafd760-3c01-4511-9627-d3421aab8c5b": {
+      "type": "FAQs",
+      "settings": {
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "4eafd760-3c01-4511-9627-d3421aab8c5b"
   ]
 }
