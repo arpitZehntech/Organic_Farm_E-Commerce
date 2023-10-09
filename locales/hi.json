@@ -1157,6 +1157,156 @@
         "cancel": "रद्द करना",
         "delete": "मिटाना"
       }
+    },
+    "errors": {
+      "addresses_loading_issue": {
+        "description": "संपर्क त्रुटि। अपना इंटरनेट कनेक्शन जांचें और पुनः प्रयास करें।"
+      },
+      "banner_title": {
+        "one": "{{count}} त्रुटि है",
+        "other": "{{count}} त्रुटियां हैं"
+      },
+      "failed_address_creation": {
+        "description": "आपका पता बनाने में एक समस्या हुई. इस पृष्ठ को ताज़ा करने का प्रयास करें या अपना इंटरनेट कनेक्शन जांचें।"
+      },
+      "failed_address_update": {
+        "description": "आपका पता अपडेट करने में समस्या हुई. इस पृष्ठ को ताज़ा करने का प्रयास करें या अपना इंटरनेट कनेक्शन जांचें।"
+      },
+      "load_orders_error": {
+        "title": "ऑर्डर लोड करने में असमर्थ",
+        "description": "पुनः प्रयास करें या बाद में वापस आएँ।",
+        "retry_button": "पुन: प्रयास करें"
+      },
+      "load_paypal_error": {
+        "description": "PayPal लोड करने में समस्या आ रही है. कृपया पुन: प्रयास करें।"
+      },
+      "no_access": {
+        "back_to_authentication_link": "किसी भिन्न खाते में लॉग इन करें",
+        "description": "आप {{shopName}} के साथ B2B ग्राहक के रूप में पंजीकृत नहीं हैं",
+        "title": "तक पहुँच नहीं"
+      },
+      "no_access_to_locations": {
+        "description": "आपके पास किसी भी स्थान तक पहुंच नहीं है"
+      },
+      "not_found": {
+        "description": "यूआरएल जांचें या कुछ मिनटों में पुनः प्रयास करें।",
+        "title": "इस पेज को लोड करने में समस्या आ रही है"
+      },
+      "order_not_found": {
+        "description": "यह आदेश मौजूद नहीं है या आपके पास इसे देखने की अनुमति नहीं है.",
+        "title": "ऑर्डर नहीं मिला"
+      },
+      "profile_update_error": {
+        "description": "आपकी प्रोफ़ाइल अपडेट करने में समस्या हुई. इस पृष्ठ को ताज़ा करने का प्रयास करें या अपना इंटरनेट कनेक्शन जांचें।"
+      },
+      "retry_action_label": "पुन: प्रयास करें",
+      "load_extension_error": {
+        "title": "गलती",
+        "description": "इस पृष्ठ को ताज़ा करें या कुछ मिनटों में पुनः प्रयास करें।",
+        "refresh_button": "पृष्ठ ताज़ा करें"
+      }
+    },
+    "payment_methods": {
+      "title": "भुगतान की विधि",
+      "add_payment_method_button": "भुगतान विधि जोड़ें",
+      "add_payment_method_banner": "तेज़ चेकआउट या पूर्व-अधिकृत सेवाओं के लिए भुगतान विधि जोड़ें",
+      "no_payment_methods_banner": "कोई भुगतान विधि नहीं जोड़ी गई",
+      "edit_payment_method_button_accessibility_label": "{{paymentMethodName}} को संपादित करें जिसका अंत {{lastDigits}} पर हो",
+      "edit_payment_method_brand_button_accessibility_label": "{{paymentMethodName}} संपादित करें",
+      "delete_payment_method_button": "मिटाना",
+      "delete_payment_method_button_accessibility_label": "{{paymentMethodName}} हटाएं",
+      "back_button": "पीछे",
+      "back_button_accessibility_label": "{{paymentMethodStepTitle}} पर वापस जाएं",
+      "generic_card": "कार्ड",
+      "expiration_warning_button_accessibility_label": "{{paymentMethodName}} के लिए समाप्ति चेतावनी दिखाएँ जो {{lastDigits}} पर समाप्त होती है",
+      "expires_soon": "यह कार्ड जल्द ही समाप्त हो रहा है",
+      "expired": "इस कार्ड की अवधि समाप्त हो गई है",
+      "card_update_consent": "यह भुगतान विधि भविष्य की खरीदारी के लिए सहेजी जाएगी.",
+      "digital_wallet_title": "डिजिटल वॉलेट",
+      "credit_or_debit_card_title": "क्रेडिट या डेबिट कार्ड",
+      "google_pay": {
+        "loading": "Google Pay लोड हो रहा है",
+        "errors": {
+          "generic": "Google Pay में एक समस्या थी. पुनः प्रयास करें या किसी भिन्न भुगतान विधि का उपयोग करें।",
+          "missing_billing_address": "Google Pay को बिलिंग पते की आवश्यकता है. कृपया अपने खाते में एक जोड़ें."
+        }
+      },
+      "apple_pay": {
+        "loading": "ऐप्पल पे लोड हो रहा है",
+        "errors": {
+          "generic": "Apple Pay में कोई समस्या थी. पुनः प्रयास करें या किसी भिन्न भुगतान विधि का उपयोग करें।",
+          "not_available": "इस डिवाइस पर Apple Pay उपलब्ध नहीं है.",
+          "missing_billing_address": "Apple Pay के लिए बिलिंग पते की आवश्यकता होती है। कृपया अपने खाते में एक जोड़ें."
+        }
+      },
+      "payment_details": {
+        "title": "भुगतान विधि विवरण",
+        "credit_card_details_accessibility_label": "{{lastDigits}} पर समाप्त हो रहा है",
+        "billing_title": "बिल भेजने का पता",
+        "card_info_title": "कार्ड की जानकारी",
+        "payment_method_expiring_on": "{{expiryDate}} को समाप्त हो रहा है",
+        "payment_method_expired_on": "{{expiryDate}} को समाप्त हो गया",
+        "preauthorized_payments": "पूर्वप्राधिकृत भुगतान",
+        "close_payment_modal": "बंद करना",
+        "close_payment_modal_accessibility_label": "भुगतान विधि विवरण मोडल बंद करें",
+        "payment_method_not_found_error": "भुगतान विधि ढूँढने में असमर्थ",
+        "payment_details_loading": "भुगतान विधि विवरण लोड हो रहा है",
+        "pre_authorized_payments": "पूर्व-अधिकृत भुगतान",
+        "total_amount_of_subscription_line_items_left": "और {{total}} अधिक",
+        "total_amount_of_subscription_line_items_left_accessibility_label": "कुल {{totalItems}} आइटम, {{totalItemsToDisplay}} आइटम प्रदर्शित हो रहे हैं।",
+        "next_payment_due": "अगला भुगतान देय {{dueDateInMonthDayYear}}",
+        "edit_payment_method_button": "संपादन करना",
+        "edit_payment_method_button_accessibility_label": "{{lastDigits}} से समाप्त होने वाली भुगतान विधि संपादित करें",
+        "loading_shop_pay": "शॉप पे लोड हो रहा है",
+        "invalid_payment_method": "अमान्य भुगतान विधि",
+        "invalid_payment_method_message": "आगामी ऑर्डर प्राप्त करना जारी रखने के लिए नए क्रेडिट कार्ड का उपयोग करें।",
+        "replace_payment_method": "भुगतान विधि बदलें",
+        "checkout_card_banner": "इस भुगतान पद्धति का उपयोग केवल पूर्व-अधिकृत भुगतानों के लिए किया जा सकता है। यदि आप इस स्टोर में लॉग इन हैं तो यह चेकआउट पर दिखाई नहीं देगा।"
+      },
+      "edit_payment_method": {
+        "title": "भुगतान विधि संपादित करें",
+        "save_payment_method_button": "बचाना",
+        "cancel_edit_payment_method_button": "रद्द करना",
+        "payment_method_updated_toast": "भुगतान विधि अपडेट की गई",
+        "billing_address": "बिल भेजने का पता",
+        "billing_address_add_new": "नया जोड़ो",
+        "billing_address_choose_from_list": "सूची में से चुनें",
+        "future_purchases_notice": "यह भुगतान विधि भविष्य की खरीदारी के लिए सहेजी जाएगी."
+      },
+      "card_fields": {
+        "card_number_label": "कार्ड संख्या",
+        "card_number_placeholder": "कार्ड संख्या",
+        "name_on_card_label": "कार्ड पर नाम",
+        "name_on_card_placeholder": "कार्ड पर नाम",
+        "card_expiry_label": "समाप्ति तिथि (MM\/YY)",
+        "card_expiry_placeholder": "समाप्ति तिथि (MM\/YY)",
+        "card_verification_value_label": "सुरक्षा कोड",
+        "card_verification_value_placeholder": "सुरक्षा कोड",
+        "card_start_label": "जारी करने की तारीख (MM\/YY)",
+        "card_start_placeholder": "जारी करने की तारीख (MM\/YY)",
+        "tooltip": {
+          "tooltip_accessibility_label": "अधिक जानकारी",
+          "card_verification_value_explanation_amex": "आपके कार्ड के सामने 4-अंकीय सुरक्षा कोड",
+          "card_verification_value_explanation_other": "आपके कार्ड के पीछे 3-अंकीय सुरक्षा कोड",
+          "card_verification_value_explanation": "3-अंकीय सुरक्षा कोड आमतौर पर आपके कार्ड के पीछे पाया जाता है। अमेरिकन एक्सप्रेस कार्ड में सामने की ओर 4 अंकों का कोड स्थित होता है।",
+          "card_security_notice": "सभी लेनदेन सुरक्षित और एन्क्रिप्टेड हैं।"
+        },
+        "field_errors": {
+          "credit_card_name_invalid": "अपना नाम बिल्कुल वैसा ही दर्ज करें जैसा आपके कार्ड पर लिखा है",
+          "credit_card_number_invalid": "एक वैध कार्ड नंबर दर्ज करें",
+          "credit_card_expiry_invalid": "वैध कार्ड समाप्ति तिथि दर्ज करें",
+          "credit_card_verification_value_blank": "अपने कार्ड पर सीवीवी या सुरक्षा कोड दर्ज करें"
+        }
+      },
+      "payment_delete": {
+        "title": "भुगतान विधि हटाएँ",
+        "description_without_replacement": "यह भुगतान विधि अब भविष्य की खरीदारी के लिए उपलब्ध नहीं होगी।",
+        "description_with_replacement": "इस भुगतान विधि को हटाने से पूर्व-अधिकृत भुगतान प्रभावित होंगे। आगामी ऑर्डर प्राप्त करना जारी रखने के लिए आप वैकल्पिक रूप से इसे किसी अन्य भुगतान विधि से बदल सकते हैं।",
+        "warning_message_with_replacement": {
+          "with_pending_orders_and_subscriptions": "इस भुगतान विधि को हटाने से पूर्व-अधिकृत भुगतान प्रभावित होंगे। जब तक आप कोई वैकल्पिक भुगतान विधि नहीं चुनते, मौजूदा ऑर्डर पर किसी भी बकाया राशि के लिए इस भुगतान विधि से शुल्क लिया जाएगा। वैकल्पिक भुगतान विधि का चयन करने से आप बिना किसी रुकावट के आगामी सदस्यता आदेश प्राप्त कर सकेंगे।",
+          "with_pending_orders": "इस भुगतान विधि को हटाने से यह आपके खाते से हट जाएगी और भविष्य में खरीदारी के लिए उपलब्ध नहीं रहेगी। जब तक आप कोई वैकल्पिक भुगतान विधि नहीं चुनते, तब भी मौजूदा ऑर्डर पर किसी भी बकाया राशि के लिए शुल्क लिया जाएगा।"
+        }
+      }
     }
   },
   "customer": {
