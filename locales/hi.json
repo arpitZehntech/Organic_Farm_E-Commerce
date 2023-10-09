@@ -482,8 +482,132 @@
         "order_covered_by_store_credit_notice": "आपका ऑर्डर आपके स्टोर क्रेडिट द्वारा कवर किया गया है।",
         "order_covered_by_redeemables_notice": "आपका ऑर्डर कवर हो गया है.",
         "store_credit": {
-          "label": "भंड़ार उधार"
-        }
+          "label": "भंड़ार उधार",
+          "apply_label": "स्टोर क्रेडिट लागू करें"
+        },
+        "clear": "स्पष्ट",
+        "billing_must_match_shipping_notice": "आपकी भुगतान विधि का बिलिंग पता शिपिंग पते से मेल खाना चाहिए।",
+        "same_billing_address_checkbox_label": "बिलिंग पते के रूप में शिपिंग पते का उपयोग करें",
+        "location_billing_address_label": "स्थान बिलिंग पता",
+        "fact_billing_address_label": "बिल भेजने का पता",
+        "location_shipping_address_label": "स्थान शिपिंग पता",
+        "use_order_billing_address_label": "ऑर्डर बिलिंग पते का उपयोग करें",
+        "use_location_billing_address_label": "स्थान बिलिंग पते का उपयोग करें",
+        "use_location_shipping_address_label": "स्थान शिपिंग पते का उपयोग करें",
+        "no_working_method_error": "यह स्टोर अभी भुगतान स्वीकार नहीं कर सकता. इस पृष्ठ को ताज़ा करें या बाद में वापस आएं।",
+        "brand_not_available": "यह स्टोर {{brand}} स्वीकार नहीं करता। कृपया भुगतान करने के लिए किसी भिन्न कार्ड का उपयोग करें।",
+        "shipping_rate_updated": "उपलब्ध शिपिंग विधियाँ अद्यतन कर दी गई हैं। चेक आउट करने से पहले अपनी पसंद की पुष्टि करें।",
+        "billing_address_invalid_phone": "जारी रखने के लिए अपने बिलिंग पते में {{label}} {{last_digits}} के लिए फ़ोन नंबर अपडेट करें।",
+        "billing_address_invalid_phone_no_card": "जारी रखने के लिए अपने बिलिंग पते में फ़ोन नंबर अपडेट करें।",
+        "preview_not_available": {
+          "title": "पूर्वावलोकन अनुपलब्ध",
+          "content": "चिंता न करें, यह एक्सप्रेस चेकआउट आपके ग्राहकों के लिए काम करता है।",
+          "button": "ठीक है"
+        },
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "वैध जारी करने की तारीख दर्ज करें",
+              "issue_number": "एक वैध जारी संख्या दर्ज करें"
+            },
+            "invalid": {
+              "verification_value": "एक वैध सीवीवी या सुरक्षा कोड दर्ज करें"
+            }
+          }
+        },
+        "simulated_checkout": "पूर्वावलोकन जल्द ही आ रहा है",
+        "vaulting_agreement_label": "तेज़ चेकआउट के लिए मेरी भुगतान जानकारी %{company} के साथ सहेजें।",
+        "business_customer_vaulting_payment_label": "चेकआउट पर इस कार्ड को सहेजें और %{कंपनी} को इस स्थान के लिए भविष्य की खरीदारी के लिए इस कार्ड से शुल्क लेने के लिए अधिकृत करें। इस स्थान पर नियुक्त कोई भी ग्राहक इस कार्ड का उपयोग करने के लिए अधिकृत होगा।",
+        "purchase_options_and_vaulting_agreement_label": "आपके कार्ट में एक या अधिक आइटम एक स्थगित या आवर्ती खरीदारी है। अपना भुगतान जारी रखकर, आप सहमत हैं कि आपकी भुगतान विधि से स्वचालित रूप से इस पृष्ठ पर सूचीबद्ध मूल्य और आवृत्ति पर शुल्क लिया जाएगा जब तक कि यह समाप्त न हो जाए या आप रद्द न कर दें। सभी रद्दीकरण %{cancelation_policy_label} के अधीन हैं।",
+        "purchase_options_cancellation_policy_label": "रद्द करने की नीति",
+        "use_different_credit_card_label": "किसी भिन्न कार्ड का उपयोग करें",
+        "saved_credit_card": "आपका सहेजा गया क्रेडिट कार्ड",
+        "saved_credit_card_info": "अंतिम चार अंक",
+        "saved_credit_card_actions": {
+          "edit": "संपादन करना",
+          "delete": "मिटाना"
+        },
+        "saved_credit_cards_modal": {
+          "view_all_label": "सभी सहेजे गए कार्ड देखें",
+          "done": "हो गया",
+          "cancel": "रद्द करना"
+        },
+        "add_credit_card_modal": {
+          "title": "कार्ड जोड़ें",
+          "done": "हो गया",
+          "save": "बचाना",
+          "cancel": "रद्द करना"
+        },
+        "delete_credit_card_modal": {
+          "title": "कार्ड हटाएँ",
+          "confirmation": "क्या आप वाकई {{lastDigits}} से समाप्त होने वाले {{brandName}} हटाना चाहते हैं?",
+          "cancel": "रद्द करना",
+          "delete": "मिटाना"
+        },
+        "edit_credit_card_modal": {
+          "title": "कार्ड संपादित करें",
+          "done": "हो गया",
+          "cancel": "रद्द करना",
+          "description": "आप केवल अपने कार्ड का बिलिंग पता संशोधित कर सकते हैं।",
+          "fields": {
+            "default": "डिफाल्ट के रूप में सेट",
+            "card_number": "कार्ड संख्या",
+            "expiry": "समाप्ति तिथि",
+            "security_code": "सुरक्षा कोड",
+            "name": "कार्ड पर नाम",
+            "billing": "बिल प्राप्तकर्ता"
+          }
+        },
+        "expired_cards_info": {
+          "one": "%{गिनती} की समय सीमा समाप्त हो चुकी कार्ड है, जिसे आप अपने खाते में देख और संपादित कर सकते हैं।",
+          "other": "ऐसे %{गिनती} कार्ड समाप्त हो चुके हैं, जिन्हें आप अपने खाते में देख और संपादित कर सकते हैं।"
+        },
+        "local_payment_method_receiver_notice": "अपना ऑर्डर देने के बाद, आपको भुगतान विवरण प्राप्त होगा। {{dueDays}} दिनों के भीतर एटीएम या ऑनलाइन भुगतान करें।",
+        "order_edit_banner_title": "{{amount_owed}} का भुगतान आवश्यक है",
+        "order_edit_banner_subtitle": "आपका ऑर्डर {{order_number}} अपडेट किया गया था। इन परिवर्तनों की समीक्षा करें, फिर अपने ऑर्डर की पुष्टि करने के लिए भुगतान करें।",
+        "order_edit_banner_items_added": {
+          "one": "जोड़ा",
+          "other": "%{गिनती} जोड़ा गया"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "निकाला गया",
+          "with_quantities": "{ {{quantity}} {{delta}} } हटा दिया गया"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "लौटा हुआ",
+          "with_quantities": "{ {{quantity}} {{delta}} } लौटाया गया"
+        },
+        "order_edit_banner_single_item_added": "जोड़ा",
+        "order_edit_banner_multiple_items_added": "{{amount}} जोड़ा गया",
+        "order_edit_banner_single_item_removed": "निकाला गया",
+        "order_edit_banner_multiple_items_removed": "{{amount}} हटा दी गई",
+        "order_edit_banner_single_item_returned": "लौटा हुआ",
+        "order_edit_banner_multiple_items_returned": "{{amount}} लौटा दी गई",
+        "gift_card_wrapper": {
+          "heading": "उपहार कार्ड",
+          "apply_gift_card_label": "उपहार कार्ड लागू करें",
+          "apply_another_gift_card_label": "दूसरा उपहार कार्ड लागू करें",
+          "gift_card_label": "उपहार कार्ड %{पहचानकर्ता}",
+          "payment_tag": "उपहार कार्ड"
+        },
+        "custom_onsite_payment_method_modal": {
+          "title": "कस्टम ऑनसाइट भुगतान पुष्टिकरण"
+        },
+        "markets_pro_disclaimer_label": "नीचे क्लिक करके और अपना ऑर्डर पूरा करके, आप ग्लोबल-ई के %{markets_pro_terms} और %{privacy_policy} पर, इस लेनदेन के लिए रिकॉर्ड मर्चेंट के रूप में ग्लोबल-ई से अपना आइटम खरीदने के लिए सहमत हैं। ग्लोबल-ई %{shop_name} के लिए एक अंतरराष्ट्रीय पूर्ति सेवा प्रदाता है",
+        "markets_pro_disclaimer_terms_and_conditions": "नियम और शर्तें",
+        "markets_pro_disclaimer_privacy_policy": "गोपनीयता नीति",
+        "markets_pro_disclaimer_terms_and_conditions_title": "मर्चेंट ऑफ़ रिकॉर्ड नियम और शर्तें",
+        "markets_pro_disclaimer_privacy_policy_title": "मर्चेंट ऑफ रिकॉर्ड गोपनीयता नीति",
+        "purchase_order_number": {
+          "title": "पीओ नंबर",
+          "label": "पीओ नंबर (वैकल्पिक)"
+        },
+        "alternative_payment_currency_total_notice": "ध्यान दें: आपसे %{amount_due} शुल्क लिया जाएगा.",
+        "waiting_on_taxes_message": "यदि अगले कुछ सेकंड में आपके करों की गणना नहीं होती है, तो पृष्ठ को ताज़ा करें।",
+        "waiting_on_taxes_notice": "करों की गणना",
+        "payment_method": "भुगतान विधि",
+        "expired_payment_method": "चयनित भुगतान विधि समाप्त हो गई है",
+        "add_card": "किसी भिन्न कार्ड का उपयोग करें"
       },
       "payment_summary": {
         "gift_card_current_balance_notice": "वर्तमान शेष %{राशि}",
@@ -1036,6 +1160,22 @@
         },
         "toggle_location": "मेरा स्थान बदलो",
         "or": "या"
+      },
+      "billing": {
+        "billing_address_title": "बिल प्राप्तकर्ता",
+        "same_as_shipping": "शिपिंग पते के समान",
+        "add_address": "किसी भिन्न पते का उपयोग करें",
+        "edit": "संपादन करना",
+        "delete": "मिटाना",
+        "address_more": "इस पते के लिए और अधिक कार्रवाइयां",
+        "address_edit": "पता संपादित करें",
+        "address_delete": "पता हटाएँ",
+        "address_confirm": "क्या आप वाकई इस पते को अपने खाते से हटाना चाहते हैं?",
+        "address_form": {
+          "add_address": "पता जोड़ें",
+          "save": "बचाना",
+          "cancel": "रद्द करना"
+        }
       }
     },
     "notices": {
