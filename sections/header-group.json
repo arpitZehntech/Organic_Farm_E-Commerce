@@ -46,6 +46,27 @@
     },
     "4eafd760-3c01-4511-9627-d3421aab8c5b": {
       "type": "FAQs",
+      "blocks": {
+        "855abd39-8752-46f6-9769-80ae2565ab99": {
+          "type": "header",
+          "settings": {
+            "header": ""
+          }
+        },
+        "97ee5614-3357-4b13-b05e-4faa8f83ae65": {
+          "type": "slide",
+          "settings": {
+            "id": "",
+            "display": false,
+            "question": "",
+            "answer": ""
+          }
+        }
+      },
+      "block_order": [
+        "855abd39-8752-46f6-9769-80ae2565ab99",
+        "97ee5614-3357-4b13-b05e-4faa8f83ae65"
+      ],
       "settings": {
       }
     }
