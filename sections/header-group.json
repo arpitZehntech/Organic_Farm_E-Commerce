@@ -28,27 +28,6 @@
     },
     "header": {
       "type": "header",
-      "blocks": {
-        "b6d66b2f-b6eb-4ed1-ad07-bdbbeaa0a82f": {
-          "type": "header",
-          "settings": {
-            "header": "FAQs1"
-          }
-        },
-        "359e708c-eebe-4734-b58f-725f6a0414a8": {
-          "type": "slide",
-          "settings": {
-            "id": "FAQs1",
-            "display": false,
-            "question": "question1",
-            "answer": "djasdjfkdsafdhfjdfsdfsdfdsfd"
-          }
-        }
-      },
-      "block_order": [
-        "b6d66b2f-b6eb-4ed1-ad07-bdbbeaa0a82f",
-        "359e708c-eebe-4734-b58f-725f6a0414a8"
-      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
@@ -58,6 +37,7 @@
         "color_scheme": "background-2",
         "menu_color_scheme": "background-1",
         "enable_country_selector": true,
+        "enable_FAQs": false,
         "enable_language_selector": true,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
@@ -88,6 +68,7 @@
         "855abd39-8752-46f6-9769-80ae2565ab99",
         "97ee5614-3357-4b13-b05e-4faa8f83ae65"
       ],
+      "disabled": true,
       "settings": {
       }
     }
