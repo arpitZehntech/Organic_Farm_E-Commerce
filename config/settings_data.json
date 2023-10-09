@@ -138,10 +138,20 @@
             "settings": {
               "header": "FAQs"
             }
+          },
+          "90df8a98-1841-4b1b-bdba-eb51c4d4441e": {
+            "type": "slide",
+            "settings": {
+              "id": "FAQs",
+              "display": true,
+              "question": "Question",
+              "answer": "FAQ, short for frequently asked questions, is a list of commonly asked questions and answers about a specific topic. FAQ is most often read as separate letters, ...FAQ, short for frequently asked questions, is a list of commonly asked questions and answers about a specific topic. FAQ is most often read as separate letters, ...FAQ, short for frequently asked questions, is a list of commonly asked questions and answers about a specific topic. FAQ is most often read as separate letters, ..."
+            }
           }
         },
         "block_order": [
-          "45d6585e-3739-45e6-870f-d43e828c2827"
+          "45d6585e-3739-45e6-870f-d43e828c2827",
+          "90df8a98-1841-4b1b-bdba-eb51c4d4441e"
         ],
         "settings": {
         }
