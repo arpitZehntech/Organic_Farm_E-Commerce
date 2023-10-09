@@ -28,6 +28,27 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "b6d66b2f-b6eb-4ed1-ad07-bdbbeaa0a82f": {
+          "type": "header",
+          "settings": {
+            "header": "FAQs1"
+          }
+        },
+        "359e708c-eebe-4734-b58f-725f6a0414a8": {
+          "type": "slide",
+          "settings": {
+            "id": "FAQs1",
+            "display": false,
+            "question": "question1",
+            "answer": "djasdjfkdsafdhfjdfsdfsdfdsfd"
+          }
+        }
+      },
+      "block_order": [
+        "b6d66b2f-b6eb-4ed1-ad07-bdbbeaa0a82f",
+        "359e708c-eebe-4734-b58f-725f6a0414a8"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
