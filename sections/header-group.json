@@ -52,7 +52,7 @@
         "product_sb_placement": "left",
         "and_logic": true,
         "sb_filters_style": "dropdown",
-        "sb_filters": "groups",
+        "sb_filters": "tags",
         "group_filter_prefix": "brand,color,price,size"
       }
     }
