@@ -51,7 +51,7 @@
         "tags_enable": true,
         "product_sb_placement": "right",
         "and_logic": true,
-        "sb_filters_style": "toggle",
+        "sb_filters_style": "dropdown",
         "sb_filters": "tags",
         "group_filter_prefix": "brand,color,price,size"
       }
