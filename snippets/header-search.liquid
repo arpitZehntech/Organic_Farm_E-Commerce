@@ -11,16 +11,42 @@
 <style>
   .header__icon--search {
     background-color: #E9E9E9;
-   
   }
   .header__icon--search:hover {
     color: #EE2D7A;
   }
   .search__input {
-    width:160px;
-    
+    width: 160px;
+    border-radius: 25px;
+  }
+  /* Hide the clear button by default */
+  .clear-search-button {
+    display: none;
   }
 </style>
+
+<script>
+  // Function to toggle the visibility of the "Clear" button based on the search input
+  function toggleClearButton() {
+    const searchInput = document.getElementById("{{ input_id }}");
+    const clearButton = document.querySelector(".clear-search-button");
+    if (searchInput.value.length > 0) {
+      clearButton.style.display = "block";
+    } else {
+      clearButton.style.display = "none";
+    }
+  }
+
+  // Function to clear the search input and hide the "Clear" button
+  function clearSearchInput() {
+    const searchInput = document.getElementById("{{ input_id }}");
+    searchInput.value = "";
+    document.querySelector(".clear-search-button").style.display = "none";
+  }
+
+  // Attach event listeners to input field
+  document.getElementById("{{ input_id }}").addEventListener("input", toggleClearButton);
+</script>
 
 <div class="header__search">
   <form action="{{ routes.search_url }}" method="get" role="search" class="search">
@@ -38,7 +64,7 @@
       </div>
       <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
       {%- endif -%}
-     
     </div>
   </form>
+  <button class="clear-search-button" onclick="clearSearchInput">Clear</button>
 </div>
