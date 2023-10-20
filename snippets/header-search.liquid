@@ -11,31 +11,20 @@
 <style>
   .header__icon--search {
     background-color: #E9E9E9;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
+    border-radius:10px
   }
   .header__icon--search:hover {
     color: #EE2D7A;
   }
-  .header__search {
-    width: 160px;
-    display: flex; /* Add this line to center align the icon and input */
-  }
-  .search-icon {
-    padding: 0 10px; /* Adjust the padding as needed */
+  .header__search{
+    width:160px;
   }
 </style>
 
 <div class="header__search">
   <form action="{{ routes.search_url }}" method="get" role="search" class="search">
     <div class="field">
-      <div class="search__input field__input header__icon--search">
-        <div class="search-icon">
-          <i class="fa fa-search"></i> <!-- You can replace this with the actual icon you want -->
-        </div>
-        <input id="{{ input_id }}" type="search" name="q" value="{{ search.terms | escape }}" placeholder="Search" {%- if settings.predictive_search_enabled -%} role="combobox" aria-expanded="false" aria-owns="predictive-search-results" aria-controls="predictive-search-results" aria-haspopup="listbox" aria-autocomplete="list" autocorrect="off" autocomplete="off" autocapitalize="off" spellcheck="false" {%- endif -%}>
-      </div>
+      <input class="search__input field__input" id="{{ input_id }}" type="search" name="q" value="{{ search.terms | escape }}" placeholder="Search" {%- if settings.predictive_search_enabled -%} role="combobox" aria-expanded="false" aria-owns="predictive-search-results" aria-controls="predictive-search-results" aria-haspopup="listbox" aria-autocomplete="list" autocorrect="off" autocomplete="off" autocapitalize="off" spellcheck="false" {%- endif -%}>
       <label class="field__label" for="{{ input_id }}">Search</label>
       <input type="hidden" name="options[prefix]" value="last">
       {%- if settings.predictive_search_enabled -%}
@@ -48,6 +37,7 @@
       </div>
       <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
       {%- endif -%}
+     
     </div>
   </form>
 </div>
