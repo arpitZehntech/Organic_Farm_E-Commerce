@@ -9,7 +9,7 @@
   {% render 'header-search', input_id: 'My-Id'%}
 {% endcomment %}
 <style>
-  .header__icon1{
+  .header__icon--search{
     background-color:red;
   }
 </style>
@@ -52,7 +52,7 @@
         <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
       
       {%- endif -%}
-          <summary class="header__icon1 header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
+          <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
       <span>
         <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false">
           <use href="#icon-search">
