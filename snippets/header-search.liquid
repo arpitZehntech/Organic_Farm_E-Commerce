@@ -8,6 +8,24 @@
   {% render 'header-search', input_id: 'My-Id'%}
 {% endcomment %}
 
+<style>
+  /* CSS for desktop view */
+  @media screen and (min-width: 768px) {
+    .header__search .header__icon.summary:focus + .search-modal {
+      display: block;
+    }
+  }
+</style>
+
+<script>
+  // JavaScript/jQuery for mobile view
+  $(document).ready(function() {
+    $('.header__icon.summary').click(function() {
+      $(this).next('.search-modal').toggle();
+    });
+  });
+</script>
+
 <details-modal class="header__search">
   <details>
     <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
