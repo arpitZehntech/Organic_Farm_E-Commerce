@@ -5,7 +5,7 @@
 .search__button {
   right: var(--inputs-border-width);
   top: var(--inputs-border-width);
-    border-radius:10px
+  border-radius:10px;
 }
 
 .reset__button {
