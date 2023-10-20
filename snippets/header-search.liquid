@@ -11,7 +11,13 @@
 <style>
   .header__icon--search{
     background-color:#E9E9E9;
+    
   }
+  .header__icon--search:hover{
+  color:red;
+    
+  }
+  
 </style>
 <div class="header__search">
  
@@ -35,13 +41,7 @@
           autocapitalize="off"
           spellcheck="false"
         {%- endif -%}
-      >     <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="search">
-      <span>
-        <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false">
-          <use href="#icon-search">
-        </svg>
-      </span>
-    </summary>
+      >
       <label class="field__label" for="{{ input_id }}">search</label>
       <input type="hidden" name="options[prefix]" value="last">
       {%- if settings.predictive_search_enabled -%}
@@ -58,7 +58,13 @@
         <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
       
       {%- endif -%}
-     
+          <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="search">
+      <span>
+        <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false">
+          <use href="#icon-search">
+        </svg>
+      </span>
+    </summary>
     </div>
     
   </form>
