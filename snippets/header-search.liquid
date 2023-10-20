@@ -10,6 +10,11 @@
 {% endcomment %}
 
 <div class="header__search">
+  <div class="search-icon">
+    <svg class="icon icon-search" aria-hidden="true" focusable="false">
+      <use href="#icon-search"></use>
+    </svg>
+  </div>
   <form action="{{ routes.search_url }}" method="get" role="search" class="search">
     <div class="field">
       <input class="search__input field__input"
@@ -33,16 +38,17 @@
       >
       <label class="field__label" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
       <input type="hidden" name="options[prefix]" value="last">
-      {%- if settings.predictive_search_enabled -%}
-        <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
-          <div class="predictive-search__loading-state">
-            <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-            </svg>
-          </div>
-        </div>
-        <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
-      {%- endif -%}
     </div>
+
+    {%- if settings.predictive_search_enabled -%}
+      <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
+        <div class="predictive-search__loading-state">
+          <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+            <circle class "path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+          </svg>
+        </div>
+      </div>
+      <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
+    {%- endif -%}
   </form>
 </div>
