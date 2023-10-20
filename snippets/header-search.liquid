@@ -18,6 +18,13 @@
       display: none;
     }
   }
+  .header__icon--search {
+    background-color: #E9E9E9;
+    border-radius: 10px;
+  }
+  .header__icon--search:hover {
+    color: #EE2D7A;
+  }
 </style>
 
 <script>
@@ -33,7 +40,7 @@
 </script>
 
 <details-modal class="header__search">
-  <details>
+  <details open>
     <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
       <span>
         <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false">
