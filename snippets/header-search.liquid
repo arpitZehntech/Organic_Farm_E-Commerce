@@ -62,7 +62,11 @@
                   </svg>
                 </button>
               </div>
-
+<div id="SearchDrawer" class="dT_ProductProactiveSearch"><form action="/search" method="get"><input type="hidden" name="type" value="product"> <input type="search" id="SearchInput" name="q" value="" placeholder="Search" aria-label="Search" autocomplete="off" class="search-bar__input"> <button type="submit" class="dt-sc-btn"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve"><path d="M76.4,69.4c13.9-17.8,10.8-43.5-7-57.4C51.6-1.9,25.9,1.2,12,19C-1.9,36.8,1.2,62.5,19,76.4C33.8,88,54.6,88,69.4,76.4
+	l18.8,18.8c1.9,1.9,5.1,2,7,0c1.9-1.9,2-5.1,0-7c0,0,0,0,0,0L76.4,69.4z M44.3,75.1c-17.1,0-30.9-13.8-30.9-30.9
+	c0-17.1,13.8-30.9,30.9-30.9c17.1,0,30.9,13.8,30.9,30.9c0,0,0,0,0,0C75.1,61.3,61.3,75.1,44.3,75.1z"></path></svg></button> <button type="button" class="dt-sc-btn close dT_SearchClose" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve"><path d="M57,50l35.2-35.2c1.9-1.9,1.9-5.1,0-7c-1.9-1.9-5.1-1.9-7,0L50,43L14.8,7.7c-1.9-1.9-5.1-1.9-7,0c-1.9,1.9-1.9,5.1,0,7
+	L43,50L7.7,85.2c-1.9,1.9-1.9,5.1,0,7c1,1,2.2,1.5,3.5,1.5s2.5-0.5,3.5-1.5L50,57l35.2,35.2c1,1,2.2,1.5,3.5,1.5s2.5-0.5,3.5-1.5
+	c1.9-1.9,1.9-5.1,0-7L57,50z"></path></svg></button></form> <div class="dT_PredictiveSearchResult_Section" style="display: none;"><ul class="dt-sc-ProductSugesstions"></ul></div></div>
               {%- if settings.predictive_search_enabled -%}
                 <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
                   <div class="predictive-search__loading-state">
