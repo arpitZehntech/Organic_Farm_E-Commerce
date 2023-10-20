@@ -11,16 +11,22 @@
 <style>
   .header__icon--search {
     background-color: #E9E9E9;
-   
   }
   .header__icon--search:hover {
     color: #EE2D7A;
   }
   .search__input {
-    width:160px;
-      border-radius: 25px;
+    width: 160px;
+    border-radius: 25px;
   }
 </style>
+
+<script>
+  // Function to clear the search input
+  function clearSearchInput() {
+    document.getElementById("{{ input_id }}").value = "";
+  }
+</script>
 
 <div class="header__search">
   <form action="{{ routes.search_url }}" method="get" role="search" class="search">
@@ -38,7 +44,7 @@
       </div>
       <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
       {%- endif -%}
-     
     </div>
   </form>
+  <button class="clear-search-button" onclick="clearSearchInput()">Clear</button>
 </div>
