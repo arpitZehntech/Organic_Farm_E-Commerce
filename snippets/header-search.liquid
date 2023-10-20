@@ -18,7 +18,7 @@
         type="search"
         name="q"
         value="{{ search.terms | escape }}"
-        placeholder="search"
+        placeholder="{{ 'general.search.search' | t }}"
         {%- if settings.predictive_search_enabled -%}
           role="combobox"
           aria-expanded="false"
@@ -32,7 +32,7 @@
           spellcheck="false"
         {%- endif -%}
       >
-      <label class="field__label" for="{{ input_id }}">search</label>
+      <label class="field__label" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
       <input type="hidden" name="options[prefix]" value="last">
       {%- if settings.predictive_search_enabled -%}
         <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
@@ -43,7 +43,6 @@
           </div>
         </div>
         <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
-      {%- endif -%}
           <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
       <span>
         <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false">
@@ -54,6 +53,8 @@
         </svg>
       </span>
     </summary>
+      {%- endif -%}
+      
     </div>
     
   </form>
