@@ -11,8 +11,15 @@
 <style>
   /* CSS for desktop view */
   @media screen and (min-width: 768px) {
-    .header__search .header__icon.summary:focus + .search-modal {
+    .header__search .search-modal {
       display: block;
+    }
+  }
+
+  /* CSS for mobile view */
+  @media screen and (max-width: 767px) {
+    .header__search .search-modal {
+      display: none;
     }
   }
 </style>
@@ -21,7 +28,7 @@
   // JavaScript/jQuery for mobile view
   $(document).ready(function() {
     $('.header__icon.summary').click(function() {
-      $(this).next('.search-modal').toggle();
+      $('.search-modal').toggle();
     });
   });
 </script>
