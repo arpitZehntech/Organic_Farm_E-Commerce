@@ -27,7 +27,7 @@
           </span>
         </a>
         {%- if link.links != blank -%}
-          <ul class="header__submenu list-menu list-menu--disclosure color-{{ section.settings.menu_color_scheme }} gradient caption-large motion-reduce global-settings-popup">
+          <ul class="header__submenu list-menu list-menu--disclosure color-{{ section.settings.menu_color_scheme }} gradient caption-large motion-reduce global-settings-popup" style="display: none;">
             {%- for childlink in link.links -%}
               <li class="submenu-item">
                 <a
@@ -41,7 +41,7 @@
                   {{ childlink.title | escape }}
                 </a>
                 {%- if childlink.links != blank -%}
-                  <ul class="header__submenu list-menu motion-reduce">
+                  <ul class="header__submenu list-menu motion-reduce" style="display: none;">
                     {%- for grandchildlink in childlink.links -%}
                       <li class="submenu-item">
                         <a
