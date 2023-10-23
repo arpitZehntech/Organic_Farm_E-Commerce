@@ -20,7 +20,7 @@
 
 .price .price-item {
   display: inline-block;
-  margin: 1 1rem 1 1;
+  margin: 0 1rem 0 0;
 }
 
 .price__regular .price-item--regular {
@@ -70,7 +70,7 @@
 }
 
 .volume-pricing--sale-badge .price__badge-sale {
-  margin-left: 0.5rem;
+  margin-left: 5rem;
 
 }
 
