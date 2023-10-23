@@ -28,23 +28,6 @@
     },
     "header": {
       "type": "header",
-      "blocks": {
-        "32a970f7-8678-4332-9966-1c15fee3aad5": {
-          "type": "mega_menu",
-          "settings": {
-            "navigation_mega_menu": "pages",
-            "push_1_heading": "Example heading",
-            "push_1_subheading": "Example sub-heading",
-            "push_1_url": "",
-            "push_2_heading": "Example heading",
-            "push_2_subheading": "Example sub-heading",
-            "push_2_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "32a970f7-8678-4332-9966-1c15fee3aad5"
-      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
@@ -61,10 +44,40 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "3b257336-5f05-4fac-8892-d1d0409a26dd": {
+      "type": "new_header",
+      "blocks": {
+        "429dee6f-9af3-417d-9e53-47fb25036d7f": {
+          "type": "mega_menu",
+          "settings": {
+            "navigation_mega_menu": "pages",
+            "push_1_heading": "Example heading",
+            "push_1_subheading": "Example sub-heading",
+            "push_1_url": "",
+            "push_2_heading": "Example heading",
+            "push_2_subheading": "Example sub-heading",
+            "push_2_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "429dee6f-9af3-417d-9e53-47fb25036d7f"
+      ],
+      "settings": {
+        "use_sticky_header": true,
+        "logo_max_width": 140,
+        "navigation_menu": "main-menu",
+        "navigation_style": "inline",
+        "enable_transparent_header": false,
+        "enable_transparent_header_collection": false,
+        "transparent_text_color": "#ffffff"
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "3b257336-5f05-4fac-8892-d1d0409a26dd"
   ]
 }
