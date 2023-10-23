@@ -52,6 +52,7 @@
           "type": "mega_menu",
           "settings": {
             "navigation_mega_menu": "pages",
+            "push_1_image": "shopify:\/\/shop_images\/farm-logo-green-landscape-vector-260nw-1595055745.webp",
             "push_1_heading": "Example heading",
             "push_1_subheading": "Example sub-heading",
             "push_1_url": "",
@@ -64,8 +65,9 @@
       "block_order": [
         "429dee6f-9af3-417d-9e53-47fb25036d7f"
       ],
+      "disabled": true,
       "settings": {
-        "use_sticky_header": true,
+        "use_sticky_header": false,
         "logo_max_width": 140,
         "navigation_menu": "main-menu",
         "navigation_style": "inline",
