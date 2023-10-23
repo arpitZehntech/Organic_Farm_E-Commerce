@@ -40,23 +40,10 @@
             "push_2_subheading": "Example sub-heading",
             "push_2_url": ""
           }
-        },
-        "cbc47048-1632-4be1-b1d6-b8852d78bfad": {
-          "type": "mega_menu",
-          "settings": {
-            "navigation_mega_menu": "",
-            "push_1_heading": "Example heading",
-            "push_1_subheading": "Example sub-heading",
-            "push_1_url": "",
-            "push_2_heading": "Example heading",
-            "push_2_subheading": "Example sub-heading",
-            "push_2_url": ""
-          }
         }
       },
       "block_order": [
-        "32a970f7-8678-4332-9966-1c15fee3aad5",
-        "cbc47048-1632-4be1-b1d6-b8852d78bfad"
+        "32a970f7-8678-4332-9966-1c15fee3aad5"
       ],
       "settings": {
         "logo_position": "middle-left",
