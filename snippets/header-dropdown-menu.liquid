@@ -27,40 +27,42 @@
           </span>
         </a>
         {%- if link.links != blank -%}
-          <ul class="header__submenu list-menu list-menu--disclosure color-{{ section.settings.menu_color_scheme }} gradient caption-large motion-reduce global-settings-popup" style="display: none;">
-            {%- for childlink in link.links -%}
-              <li class="submenu-item">
-                <a
-                  id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
-                  href="{{ childlink.url }}"
-                  class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"
-                  {% if childlink.current %}
-                    aria-current="page"
-                  {% endif %}
-                >
-                  {{ childlink.title | escape }}
-                </a>
-                {%- if childlink.links != blank -%}
-                  <ul class="header__submenu list-menu motion-reduce" style="display: none;">
-                    {%- for grandchildlink in childlink.links -%}
-                      <li class="submenu-item">
-                        <a
-                          id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
-                          href="{{ grandchildlink.url }}"
-                          class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"
-                          {% if grandchildlink.current %}
-                            aria-current="page"
-                          {% endif %}
-                        >
-                          {{ grandchildlink.title | escape }}
-                        </a>
-                      </li>
-                    {%- endfor -%}
-                  </ul>
-                {%- endif -%}
-              </li>
-            {%- endfor -%}
-          </ul>
+          <div class="header__submenu-wrapper">
+            <ul class="header__submenu list-menu list-menu--disclosure color-{{ section.settings.menu_color_scheme }} gradient caption-large motion-reduce global-settings-popup" style="display: none;">
+              {%- for childlink in link.links -%}
+                <li class="submenu-item">
+                  <a
+                    id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
+                    href="{{ childlink.url }}"
+                    class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"
+                    {% if childlink.current %}
+                      aria-current="page"
+                    {% endif %}
+                  >
+                    {{ childlink.title | escape }}
+                  </a>
+                  {%- if childlink.links != blank -%}
+                    <ul class="header__submenu list-menu motion-reduce" style="display: none;">
+                      {%- for grandchildlink in childlink.links -%}
+                        <li class="submenu-item">
+                          <a
+                            id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
+                            href="{{ grandchildlink.url }}"
+                            class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"
+                            {% if grandchildlink.current %}
+                              aria-current="page"
+                            {% endif %}
+                          >
+                            {{ grandchildlink.title | escape }}
+                          </a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
         {%- endif -%}
       </li>
     {%- endfor -%}
