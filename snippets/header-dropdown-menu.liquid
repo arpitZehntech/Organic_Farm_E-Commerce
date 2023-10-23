@@ -64,4 +64,17 @@
       </li>
     {%- endfor -%}
   </ul>
-</nav>
+</nav> 
+<style>
+
+.header__submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.header-menu-item:hover .header__submenu {
+  display: block;
+}
+</style>
