@@ -73,7 +73,7 @@
       <div class="search-icon">
         <i class="fas fa-search"></i>
       </div>
-<input class="search__input field__input" id="{{ input_id }}" type="search" name="q" value="{{ search.terms | escape }}" {%- if settings.predictive_search_enabled -%} role="combobox" aria-expanded="false" aria-owns="predictive-search-results" aria-controls="predictive-search-results" aria-haspopup="listbox" aria-autocomplete="list" autocorrect="off" autocomplete="off" autocapitalize="off" spellcheck="false" onkeyup="toggleClearButton()" {%- endif -%} style="border: 2px solid black; background-color: #E4F8FA; border-radius: 10px;">
+<input class="search__input field__input" id="{{ input_id }}" type="search" name="q" value="{{ search.terms | escape }}" placeholder="Search" {%- if settings.predictive_search_enabled -%} role="combobox" aria-expanded="false" aria-owns="predictive-search-results" aria-controls="predictive-search-results" aria-haspopup="listbox" aria-autocomplete="list" autocorrect="off" autocomplete="off" autocapitalize="off" spellcheck="false" onkeyup="toggleClearButton()" {%- endif -%} style="border: 2px solid black; background-color: #E4F8FA; border-radius: 10px;">
 
       <label class="field__label" for="{{ input_id }}" >Search</label>
       <input type="hidden" name="options[prefix]" value="last">
