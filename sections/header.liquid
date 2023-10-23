@@ -243,36 +243,7 @@
       {%- endif -%}
     {%- endif -%}
 
-    
-    {%- if section.blocks.size > 0 -%}
-  <nav class="mega-menu">
-    <ul class="mega-menu__list">
-      {%- for block in section.blocks -%}
-        {%- if block.type == 'mega_menu' -%}
-          <li class="mega-menu__item">
-            <a href="{{ block.settings.push_1_url | default: '#' }}" class="mega-menu__link">
-              <div class="mega-menu__image">
-              <div class="mega-menu__content">
-                <h3 class="mega-menu__heading">{{ block.settings.push_1_heading }}</h3>
-                <p class="mega-menu__subheading">{{ block.settings.push_1_subheading }}</p>
-              </div>
-            </a>
-          </li>
-          <li class="mega-menu__item">
-            <a href="{{ block.settings.push_2_url | default: '#' }}" class="mega-menu__link">
-              <div class="mega-menu__image">
-               
-              <div class="mega-menu__content">
-                <h3 class="mega-menu__heading">{{ block.settings.push_2_heading }}</h3>
-                <p class="mega-menu__subheading">{{ block.settings.push_2_subheading }}</p>
-              </div>
-            </a>
-          </li>
-        {%- endif -%}
-      {%- endfor -%}
-    </ul>
-  </nav>
-{%- endif -%}
+
 
 
     
@@ -380,9 +351,87 @@
       </div>
     </div>
 
+
+      
+<div class="MegaMenu">
+    <ul class="MegaMenu__List">
+        <!-- Iterate through menu items and generate Mega Menu content -->
+        {% for block in megaMenuBlocks %}
+            <li class="MegaMenu__Item">
+                <a href="{{ block.settings.navigation_mega_menu }}" class="MegaMenu__ItemTitle">{{ block.settings.navigation_mega_menu }}</a>
+                <div class="MegaMenu__Content">
+                    <div class="MegaMenu__Push">
+                        <img src="{{ block.settings.push_1_image | img_url: '740x460' }}" alt="Image 1">
+                        <h2 class="MegaMenu__Heading">{{ block.settings.push_1_heading }}</h2>
+                        <p class="MegaMenu__SubHeading">{{ block.settings.push_1_subheading }}</p>
+                        <a href="{{ block.settings.push_1_url }}" class="MegaMenu__Link">Learn More</a>
+                    </div>
+                    <div class="MegaMenu__Push">
+                        <img src="{{ block.settings.push_2_image | img_url: '740x460' }}" alt="Image 2">
+                        <h2 class="MegaMenu__Heading">{{ block.settings.push_2_heading }}</h2>
+                        <p class="MegaMenu__SubHeading">{{ block.settings.push_2_subheading }}</p>
+                        <a href="{{ block.settings.push_2_url }}" class="MegaMenu__Link">Learn More</a>
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
     
   </header>
 
+<style>
+  /* Mega Menu Styles */
+.MegaMenu {
+    /* Your Mega Menu styles */
+}
+
+.MegaMenu__List {
+    list-style: none;
+    padding: 0;
+}
+
+.MegaMenu__Item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.MegaMenu__ItemTitle {
+    font-weight: bold;
+}
+
+.MegaMenu__Content {
+    display: none;
+    position: absolute;
+    /* Mega Menu content styles */
+}
+
+/* Show Mega Menu content on hover */
+.MegaMenu__Item:hover .MegaMenu__Content {
+    display: block;
+    /* Additional styles to position the Mega Menu content */
+}
+
+.MegaMenu__Push {
+    /* Styles for each push element */
+}
+
+/* Additional styles for headings, subheadings, and links can be added as needed */
+
+</style>
+  <script>// Optional: Add JavaScript to handle Mega Menu hover functionality
+const megaMenuItems = document.querySelectorAll('.MegaMenu__Item');
+
+megaMenuItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        item.querySelector('.MegaMenu__Content').style.display = 'block';
+    });
+
+    item.addEventListener('mouseleave', () => {
+        item.querySelector('.MegaMenu__Content').style.display = 'none';
+    });
+});
+</script>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
 {%- if settings.cart_type == "notification" -%}
