@@ -32,7 +32,7 @@
         "32a970f7-8678-4332-9966-1c15fee3aad5": {
           "type": "mega_menu",
           "settings": {
-            "navigation_mega_menu": "categories",
+            "navigation_mega_menu": "pages",
             "push_1_heading": "Example heading",
             "push_1_subheading": "Example sub-heading",
             "push_1_url": "",
