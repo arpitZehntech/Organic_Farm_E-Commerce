@@ -8,6 +8,7 @@
   Usage:
   {% render 'header-search', input_id: 'My-Id'%}
 {% endcomment %}
+
 <style>
   .header__icon--search {
     background-color: #E9E9E9;
@@ -17,7 +18,7 @@
   }
   .search__input {
     width: 160px;
-    background-color:#E4F8FA;
+    background-color: #E4F8FA;
   }
   .search__input:focus {
     outline: none; /* Remove the outline on focus if desired */
@@ -25,12 +26,21 @@
   /* Hide the clear button by default */
   .clear-search-button {
     display: none;
-    /* border-radius: 50%; /* Round border radius to create a circular button */ */
-    background-color: #E9E9E9; /* Background color for the button */
-    color: #EE2D7A; /* Text color for the button */
-    padding: 5px 8px; /* Adjust padding as needed */
+    background-color: #E9E9E9;
+    color: #EE2D7A;
+    padding: 5px 8px;
     cursor: pointer;
     border: none;
+  }
+
+  /* Add a media query for mobile view */
+  @media (max-width: 768px) {
+    .search__input {
+      display: none; /* Hide search input on mobile */
+    }
+    .clear-search-button {
+      display: none; /* Hide clear button on mobile */
+    }
   }
 </style>
 
@@ -58,10 +68,10 @@
   <form action="{{ routes.search_url }}" method="get" role="search" class="search">
     <div class="field">
       <input class="search__input field__input" id="{{ input_id }}" type="search" name="q" value="{{ search.terms | escape }}" placeholder="Search" {%- if settings.predictive_search_enabled -%} role="combobox" aria-expanded="false" aria-owns="predictive-search-results" aria-controls="predictive-search-results" aria-haspopup="listbox" aria-autocomplete="list" autocorrect="off" autocomplete="off" autocapitalize="off" spellcheck="false" onkeyup="toggleClearButton()" {%- endif -%}>
-     
+
       <label class="field__label" for="{{ input_id }}">Search</label>
       <input type="hidden" name="options[prefix]" value="last">
-       
+
       {%- if settings.predictive_search_enabled -%}
       <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
         <div class="predictive-search__loading-state">
@@ -72,8 +82,7 @@
       </div>
       <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
       {%- endif -%}
-   
-     </div>
+    </div>
   </form>
   <button class="clear-search-button" onclick="clearSearchInput()">✖</button>
 </div>
