@@ -382,6 +382,16 @@
 
 
  <div class="Header__FlexItem Header__FlexItem--fill">
+      <button class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless use_sidebar_menu %}hidden-desk{% endunless %}" aria-expanded="false" data-action="open-drawer" data-drawer-id="sidebar-menu" aria-label="{{ 'header.navigation.open_sidebar' | t }}">
+        <span class="hidden-tablet-and-up">{%- include 'icon' with 'nav' -%}</span>
+        <span class="hidden-phone">{%- include 'icon' with 'nav-desktop' -%}</span>
+      </button>
+
+      {%- comment -%}
+      --------------------------------------------------------------------------------------------------------------------
+      DESKTOP NAVIGATION (if not using the sidebar mode)
+      --------------------------------------------------------------------------------------------------------------------
+      {%- endcomment -%}
 
       {%- unless use_sidebar_menu -%}
         {%- assign main_menu_handle = section.settings.navigation_menu | default: 'main-menu' -%}
@@ -466,7 +476,9 @@
                                 {%- assign max_width = 370 | at_most: block.settings.push_1_image.width -%}
 
                                 <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_1_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_1_image.aspect_ratio }}">
-                               
+                                  <img class="Image--lazyLoad Image--fadeIn"
+                                       data-src="{{ block.settings.push_1_image | img_url: '370x230', scale: 2 }}"
+                                       alt="{{ block.settings.push_1_image.alt | escape }}">
 
                                   <span class="Image__Loader"></span>
                                 </div>
@@ -494,7 +506,9 @@
                                 {%- assign max_width = 370 | at_most: block.settings.push_2_image.width -%}
 
                                 <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ block.settings.push_2_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: {{ block.settings.push_2_image.aspect_ratio }}">
-                                
+                                  <img class="Image--lazyLoad Image--fadeIn"
+                                       data-src="{{ block.settings.push_2_image | img_url: '370x230', scale: 2 }}"
+                                       alt="{{ block.settings.push_2_image.alt | escape }}">
 
                                   <span class="Image__Loader"></span>
                                 </div>
@@ -518,10 +532,41 @@
                     </div>
                   {%- endfor -%}
                 {%- elsif link.links != blank -%}
-              
+                  <div class="DropdownMenu" aria-hidden="true">
+                    <ul class="Linklist">
+                      {%- for sub_link in link.links -%}
+                        <li class="Linklist__Item" {% if sub_link.links != blank %}aria-haspopup="true"{% endif %}>
+                          <a href="{{ sub_link.url }}" class="Link Link--secondary">{{ sub_link.title | escape }} {% if sub_link.links != blank %}{% include 'icon' with 'select-arrow-right' %}{% endif %}</a>
+
+                          {%- if sub_link.links != blank -%}
+                            <div class="DropdownMenu" aria-hidden="true">
+                              <ul class="Linklist">
+                                {%- for sub_sub_link in sub_link.links -%}
+                                  <li class="Linklist__Item">
+                                    <a href="{{ sub_sub_link.url }}" class="Link Link--secondary">{{ sub_sub_link.title | escape }}</a>
+                                  </li>
+                                {%- endfor -%}
+                              </ul>
+                            </div>
+                          {%- endif -%}
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </div>
                 {%- endif -%}
               {%- endcapture -%}
 
+              <li class="HorizontalList__Item {% if link.links == blank and link.active %}is-active{% endif %}" {% if menu_item_dropdown != blank %}aria-haspopup="true"{% endif %}>
+                <a href="{{ link.url }}" class="Heading u-h6">
+                  {{- link.title | escape -}}
+
+                  {%- if use_mega_menu or menu_item_dropdown == blank -%}
+                    <span class="Header__LinkSpacer">{{ link.title | escape }}</span>
+                  {%- endif -%}
+                </a>
+
+                {{- menu_item_dropdown -}}
+              </li>
             {%- endfor -%}
           </ul>
         </nav>
@@ -955,6 +1000,12 @@
           "label": "Link"
         }
       ]
+    }
+  ],
+  
+  "blocks": [
+    {
+      "type": "@app"
     }
   ]
 }
