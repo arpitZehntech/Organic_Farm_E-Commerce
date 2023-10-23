@@ -242,7 +242,39 @@
         </h1>
       {%- endif -%}
     {%- endif -%}
-    
+    {%- if section.blocks.size > 0 -%}
+  <nav class="mega-menu">
+    <ul class="mega-menu__list">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'mega_menu' -%}
+          <li class="mega-menu__item">
+            <a href="{{ block.settings.push_1_url | default: '#' }}" class="mega-menu__link">
+              <div class="mega-menu__image">
+                <img src="{{ block.settings.push_1_image | img_url: '740x460' }}" alt="{{ block.settings.push_1_heading }}">
+              </div>
+              <div class="mega-menu__content">
+                <h3 class="mega-menu__heading">{{ block.settings.push_1_heading }}</h3>
+                <p class="mega-menu__subheading">{{ block.settings.push_1_subheading }}</p>
+              </div>
+            </a>
+          </li>
+          <li class="mega-menu__item">
+            <a href="{{ block.settings.push_2_url | default: '#' }}" class="mega-menu__link">
+              <div class="mega-menu__image">
+                <img src="{{ block.settings.push_2_image | img_url: '740x460' }}" alt="{{ block.settings.push_2_heading }}">
+              </div>
+              <div class="mega-menu__content">
+                <h3 class="mega-menu__heading">{{ block.settings.push_2_heading }}</h3>
+                <p class="mega-menu__subheading">{{ block.settings.push_2_subheading }}</p>
+              </div>
+            </a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </nav>
+{%- endif -%}
+
 
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
     
@@ -707,8 +739,72 @@
   ],
   "blocks": [
     {
-      "type": "@app"
+      "type": "mega_menu",
+      "name": "Mega menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "navigation_mega_menu",
+          "label": "Menu item",
+          "info": "Enter menu item to apply a mega menu dropdown. [Learn more](http://support.maestrooo.com/article/149-navigation-enabling-and-configuring-mega-menu)."
+        },
+        {
+          "type": "header",
+          "content": "Image push 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "push_1_image",
+          "label": "Image",
+          "info": "740 x 460 px jpg recommended"
+        },
+        {
+          "type": "text",
+          "id": "push_1_heading",
+          "label": "Heading",
+          "default": "Example heading"
+        },
+        {
+          "type": "text",
+          "id": "push_1_subheading",
+          "label": "Sub-heading",
+          "default": "Example sub-heading"
+        },
+        {
+          "type": "url",
+          "id": "push_1_url",
+          "label": "Link"
+        },
+        {
+          "type": "header",
+          "content": "Image push 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "push_2_image",
+          "label": "Image",
+          "info": "740 x 460 px jpg recommended"
+        },
+        {
+          "type": "text",
+          "id": "push_2_heading",
+          "label": "Heading",
+          "default": "Example heading"
+        },
+        {
+          "type": "text",
+          "id": "push_2_subheading",
+          "label": "Sub-heading",
+          "default": "Example sub-heading"
+        },
+        {
+          "type": "url",
+          "id": "push_2_url",
+          "label": "Link"
+        }
+      ]
     }
   ]
+
 }
 {% endschema %}
