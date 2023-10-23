@@ -380,58 +380,7 @@
     
   </header>
 
-<style>
-  /* Mega Menu Styles */
-.MegaMenu {
-    /* Your Mega Menu styles */
-}
 
-.MegaMenu__List {
-    list-style: none;
-    padding: 0;
-}
-
-.MegaMenu__Item {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.MegaMenu__ItemTitle {
-    font-weight: bold;
-}
-
-.MegaMenu__Content {
-    display: none;
-    position: absolute;
-    /* Mega Menu content styles */
-}
-
-/* Show Mega Menu content on hover */
-.MegaMenu__Item:hover .MegaMenu__Content {
-    display: block;
-    /* Additional styles to position the Mega Menu content */
-}
-
-.MegaMenu__Push {
-    /* Styles for each push element */
-}
-
-/* Additional styles for headings, subheadings, and links can be added as needed */
-
-</style>
-  <script>// Optional: Add JavaScript to handle Mega Menu hover functionality
-const megaMenuItems = document.querySelectorAll('.MegaMenu__Item');
-
-megaMenuItems.forEach(item => {
-    item.addEventListener('mouseenter', () => {
-        item.querySelector('.MegaMenu__Content').style.display = 'block';
-    });
-
-    item.addEventListener('mouseleave', () => {
-        item.querySelector('.MegaMenu__Content').style.display = 'none';
-    });
-});
-</script>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
 {%- if settings.cart_type == "notification" -%}
