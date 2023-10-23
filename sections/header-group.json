@@ -44,23 +44,10 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "dcfa7eaa-eb2a-45f6-94f0-3b69a5c0d82d": {
-      "type": "filter",
-      "disabled": true,
-      "settings": {
-        "tags_enable": true,
-        "product_sb_placement": "right",
-        "and_logic": true,
-        "sb_filters_style": "toggle",
-        "sb_filters": "tags",
-        "group_filter_prefix": "brand,color,price,size"
-      }
     }
   },
   "order": [
     "announcement-bar",
-    "header",
-    "dcfa7eaa-eb2a-45f6-94f0-3b69a5c0d82d"
+    "header"
   ]
 }
