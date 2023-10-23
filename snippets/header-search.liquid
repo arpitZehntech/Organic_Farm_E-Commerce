@@ -41,6 +41,9 @@
     .clear-search-button {
       display: none; /* Hide clear button on mobile */
     }
+    .search-icon {
+      display: block; /* Display search icon on mobile */
+    }
   }
 </style>
 
@@ -67,6 +70,10 @@
 <div class="header__search">
   <form action="{{ routes.search_url }}" method="get" role="search" class="search">
     <div class="field">
+      <!-- Display a search icon on mobile -->
+      <div class="search-icon">
+        <i class="fas fa-search"></i>
+      </div>
       <input class="search__input field__input" id="{{ input_id }}" type="search" name="q" value="{{ search.terms | escape }}" placeholder="Search" {%- if settings.predictive_search_enabled -%} role="combobox" aria-expanded="false" aria-owns="predictive-search-results" aria-controls="predictive-search-results" aria-haspopup="listbox" aria-autocomplete="list" autocorrect="off" autocomplete="off" autocapitalize="off" spellcheck="false" onkeyup="toggleClearButton()" {%- endif -%}>
 
       <label class="field__label" for="{{ input_id }}">Search</label>
