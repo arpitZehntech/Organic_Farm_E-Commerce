@@ -242,6 +242,8 @@
         </h1>
       {%- endif -%}
     {%- endif -%}
+
+    
     {%- if section.blocks.size > 0 -%}
   <nav class="mega-menu">
     <ul class="mega-menu__list">
@@ -250,8 +252,6 @@
           <li class="mega-menu__item">
             <a href="{{ block.settings.push_1_url | default: '#' }}" class="mega-menu__link">
               <div class="mega-menu__image">
-                <img src="{{ block.settings.push_1_image | img_url: '740x460' }}" alt="{{ block.settings.push_1_heading }}">
-              </div>
               <div class="mega-menu__content">
                 <h3 class="mega-menu__heading">{{ block.settings.push_1_heading }}</h3>
                 <p class="mega-menu__subheading">{{ block.settings.push_1_subheading }}</p>
@@ -261,8 +261,7 @@
           <li class="mega-menu__item">
             <a href="{{ block.settings.push_2_url | default: '#' }}" class="mega-menu__link">
               <div class="mega-menu__image">
-                <img src="{{ block.settings.push_2_image | img_url: '740x460' }}" alt="{{ block.settings.push_2_heading }}">
-              </div>
+               
               <div class="mega-menu__content">
                 <h3 class="mega-menu__heading">{{ block.settings.push_2_heading }}</h3>
                 <p class="mega-menu__subheading">{{ block.settings.push_2_subheading }}</p>
@@ -276,6 +275,7 @@
 {%- endif -%}
 
 
+    
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
     
     {% render 'header-search', input_id: 'Search-In-Modal' %}
