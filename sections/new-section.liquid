@@ -508,10 +508,8 @@ a:hover
           </div>
         {%- endif -%}
       </a>
-    </div>
-
-
-       {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
+        
+         {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
           <noscript class="small-hide medium-hide">
             {%- form 'localization', id: 'HeaderLanguageMobileFormNoScript', class: 'localization-form' -%}
               <div class="localization-form__select">
@@ -538,6 +536,10 @@ a:hover
             {%- endform -%}
           </localization-form>
         {%- endif -%}
+    </div>
+
+
+    
   </header>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
