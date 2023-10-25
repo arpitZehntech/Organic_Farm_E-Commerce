@@ -206,9 +206,8 @@
       if section.settings.menu != blank
         if section.settings.menu_type_desktop == 'dropdown'
           render 'header-dropdown-menu'
-        elsif section.settings.custom_mega_menu != 'drawer'
-
- render 'drop_mega'
+        elsif section.settings.menu_type_desktop != 'drawer'
+           render 'header-mega-menu'
 
 
         endif
