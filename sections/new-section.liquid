@@ -244,9 +244,9 @@ a:hover
     {%- endif -%}
 
     <!----------- start -------------->
-          <div class="Header__FlexItem Header__FlexItem--fill">
+          <div class="Header__FlexItem Header__FlexItem--fill"> 
       <!-- <button class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless use_sidebar_menu %}hidden-desk{% endunless %}" aria-expanded="false" data-action="open-drawer" data-drawer-id="sidebar-menu" aria-label="{{ 'header.navigation.open_sidebar' | t }}">
-        <span class="hidden-tablet-and-up">{%- include 'icon' with 'nav' -%}</span>
+        <span class="hidden-tablet-and-up">{%- include 'icon' with 'nav' -%}</span> 
         <span class="hidden-phone">{%- include 'icon' with 'nav-desktop' -%}</span>
       </button> -->
 
@@ -474,7 +474,8 @@ a:hover
       {% render 'header-search', input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
-        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.navigation_menu != blank %} small-hide{% endif %}">
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset"style="padding-left:30px";
+{% if section.settings.navigation_menu != blank %} small-hide{% endif %}">
           {% render 'icon-account' %}
           <span class="visually-hidden">
             {%- liquid
