@@ -33,7 +33,7 @@
 
 @font-face {
   font-family: "Poppins";
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   font-size: 10px;
   src: url("//zehntech-store-test.myshopify.com/cdn/fonts/century_gothic/centurygothic_i7.a93d43c32633e83d8663433e7b3a668198503674.woff2?h1=emVobnRlY2gtc3RvcmUtdGVzdC5hY2NvdW50Lm15c2hvcGlmeS5jb20&hmac=63ef650aa03095161d4a565f954032995e6d67b3151b764cdb59a94972640ed0") format("woff2"), url("//zehntech-store-test.myshopify.com/cdn/fonts/century_gothic/centurygothic_i7.902eae204ad5c1990bd9339fc5297d31234defc9.woff?h1=emVobnRlY2gtc3RvcmUtdGVzdC5hY2NvdW50Lm15c2hvcGlmeS5jb20&hmac=2c2195e19fef2cbb2b196fa7962629a4840320f7f325b250c5af0c971802d996") format("woff"); }
