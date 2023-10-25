@@ -5,28 +5,28 @@
 /* Typography */
 @font-face {
   font-family: Poppins;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   font-size: 10px;
   src: url("//zehntech-store-test.myshopify.com/cdn/fonts/futura/futura_n4.df36ce3d9db534a4d7947f4aa825495ed740e410.woff2?h1=emVobnRlY2gtc3RvcmUtdGVzdC5hY2NvdW50Lm15c2hvcGlmeS5jb20&hmac=cc1c050a7dc816e2a68e3efaba19b69c4e96be5e869b2869a16a6eacceb702da") format("woff2"), url("//zehntech-store-test.myshopify.com/cdn/fonts/futura/futura_n4.6bce24beb4ba1ff4ddeb20f7cd6e2fa513a3d6ec.woff?h1=emVobnRlY2gtc3RvcmUtdGVzdC5hY2NvdW50Lm15c2hvcGlmeS5jb20&hmac=c1d1a3af703fa1796c780c38daefab5f7a876e4ee733c73efd523f5e34cd8180") format("woff"); }
 
 @font-face {
   font-family: "Poppins";
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   font-size: 10px;
   src: url("//zehntech-store-test.myshopify.com/cdn/fonts/century_gothic/centurygothic_n4.ad57dd3bb953e5ec072f848ba96048738158e9b0.woff2?h1=emVobnRlY2gtc3RvcmUtdGVzdC5hY2NvdW50Lm15c2hvcGlmeS5jb20&hmac=932544d2e80ed96d9aeece45fe2f43cfd298ea171a3ffa670ece9355a6fed1ef") format("woff2"), url("//zehntech-store-test.myshopify.com/cdn/fonts/century_gothic/centurygothic_n4.346454bcdd76b0c02e149e968e75218ca6ee803f.woff?h1=emVobnRlY2gtc3RvcmUtdGVzdC5hY2NvdW50Lm15c2hvcGlmeS5jb20&hmac=541bcecbced903a6fecc5597695f6ff89a45c6304cf7457603e39d55411689d1") format("woff"); }
 
 @font-face {
   font-family: "Poppins";
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   font-size: 10px;
   src: url("//zehntech-store-test.myshopify.com/cdn/fonts/century_gothic/centurygothic_n7.9c88796e9511a086b9c0038824e3fcaa4e104f7d.woff2?h1=emVobnRlY2gtc3RvcmUtdGVzdC5hY2NvdW50Lm15c2hvcGlmeS5jb20&hmac=f257e791258f2e86da6cd830c0e54f82eef975211fd0b4fb2040dddeabd2d763") format("woff2"), url("//zehntech-store-test.myshopify.com/cdn/fonts/century_gothic/centurygothic_n7.bfbdd76b5b769e73488b72ad922937634199bb91.woff?h1=emVobnRlY2gtc3RvcmUtdGVzdC5hY2NvdW50Lm15c2hvcGlmeS5jb20&hmac=8abc0a03380b9d6e4da4cd7d36795eeefda05049fcc3c423b76b97976378fa32") format("woff"); }
 
 @font-face {
   font-family: "Poppins";
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   font-size: 10px;
   src: url("//zehntech-store-test.myshopify.com/cdn/fonts/century_gothic/centurygothic_i4.057018ca8ff3e7e0367ab50107a08a8a1691315e.woff2?h1=emVobnRlY2gtc3RvcmUtdGVzdC5hY2NvdW50Lm15c2hvcGlmeS5jb20&hmac=a1109a2c273afdec19e8de0f8c6107e9d7543148a4f37ab83c78ceb8c170f064") format("woff2"), url("//zehntech-store-test.myshopify.com/cdn/fonts/century_gothic/centurygothic_i4.6bbeca156a45aa967c74d1bdac2f4ec1824dcada.woff?h1=emVobnRlY2gtc3RvcmUtdGVzdC5hY2NvdW50Lm15c2hvcGlmeS5jb20&hmac=3f9a9af009df51d3fce1b524b17c437d77d1ce012f8ee86cb917cfb615b59b13") format("woff"); }
