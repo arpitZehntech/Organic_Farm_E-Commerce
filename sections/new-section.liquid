@@ -401,7 +401,7 @@ PRESTIGE CSS
                               <ul class="Linklist">
                                 {%- for sub_sub_link in sub_link.links -%}
                                   <li class="Linklist__Item">
-                                    <a href="{{ sub_sub_link.url }}" class="Link Link--secondary">{{ sub_sub_link.title | escape }}</a>
+                                    <a href="{{ sub_sub_link.url }}" class="Link Link--secondary" style="text-decoration: none;">{{ sub_sub_link.title | escape }}</a>
                                   </li>
                                 {%- endfor -%}
                               </ul>
