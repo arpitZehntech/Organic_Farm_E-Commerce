@@ -209,7 +209,7 @@
         elsif section.settings.menu_type_desktop != 'drawer'
           render 'drop_mega'
         endif
-      endif 
+      endif    
     %}
     
 
@@ -572,6 +572,19 @@
       "label": "t:sections.header.settings.menu_type_desktop.label",
       "info": "t:sections.header.settings.menu_type_desktop.info"
     },
+    {
+  "type": "header",
+  "content": "t:sections.header.settings.header__2.content",
+  "info": "t:sections.header.settings.header__2.info"
+},
+{
+  "type": "checkbox",
+  "id": "custom_mega_menu",
+  "default": false,
+  "label": "Custom Mega Menu",
+  "info": "Enable this to use a custom mega menu"
+},
+
     {
       "type": "select",
       "id": "sticky_header_type",
