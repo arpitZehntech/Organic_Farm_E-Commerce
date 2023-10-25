@@ -203,15 +203,16 @@
     {%- endif -%}
 
     {%- liquid
-      if section.settings.menu != blank
-        if section.settings.menu_type_desktop == 'dropdown'
-          render 'header-dropdown-menu'
-        elsif section.settings.menu_type_desktop != 'drawer'
-           render 'header-mega-menu'
-
-
-        endif
-      endif    
+  if section.settings.menu != blank 
+   if section.settings.menu_type_desktop == 'dropdown'
+    render 'header-dropdown-menu'
+   elsif section.settings.menu_type_desktop != 'drawer' 
+  if block.id == 'navigation_mega_menu'
+      render 'header-mega-menu'
+     endif
+  endif
+  endif 
+   
     %}
     
 
@@ -727,7 +728,7 @@
       "settings": [
         {
           "type": "text",
-          "id": "menu_type_desktop", // Change the id here
+          "id": "navigation_mega_menu", // Change the id here
           "label": "Menu item",
           "info": "Enter menu item to apply a mega menu dropdown. [Learn more](http://support.maestrooo.com/article/149-navigation-enabling-and-configuring-mega-menu)."
         },
