@@ -927,8 +927,8 @@ body:not(.is-tabbing) textarea:focus {
 /**
  * Very general typographic rules that are applied site wide
  */
-html {
-  font-size: 13px; }
+/* html {
+  font-size: 13px; } */
 
 body {
   font-family: "Century Gothic", sans-serif;
