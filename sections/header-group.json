@@ -45,7 +45,6 @@
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
-        "custom_mega_menu": false,
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": false,
         "color_scheme": "background-2",
@@ -58,10 +57,16 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "new-section": {
+      "type": "new-section",
+      "settings": {
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "new-section"
   ]
 }
