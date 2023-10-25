@@ -378,10 +378,11 @@ a:hover
                 {%- elsif link.links != blank -%}
                   <div class="DropdownMenu" aria-hidden="true">
                     <ul class="Linklist">
+                        {% render 'icon-caret' %}
                       {%- for sub_link in link.links -%}
                         <li class="Linklist__Item" {% if sub_link.links != blank %}aria-haspopup="true"{% endif %}>
                           <a href="{{ sub_link.url }}" class="Link Link--secondary" style="text-decoration: none;">{{ sub_link.title | escape }} {% if sub_link.links != blank %}{% include 'icon' with 'select-arrow-right' %}{% endif %}</a>
-  {% render 'icon-caret' %}
+
                           {%- if sub_link.links != blank -%}
                             <div class="DropdownMenu" aria-hidden="true">
                               <ul class="Linklist">
