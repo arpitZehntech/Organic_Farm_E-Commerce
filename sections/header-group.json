@@ -28,6 +28,20 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "305c5ae1-b445-4b84-97fe-7431117a7b20": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_type_desktop": "categories",
+            "push_1_heading": "Example heading",
+            "push_1_subheading": "Example sub-heading",
+            "push_1_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "305c5ae1-b445-4b84-97fe-7431117a7b20"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
