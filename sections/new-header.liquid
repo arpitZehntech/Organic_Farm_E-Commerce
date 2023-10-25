@@ -293,6 +293,7 @@ a:hover
 
                     <div class="MegaMenu {% if push_image_count != 0 and link.links.size == 0 %}MegaMenu--spacingCenter{% elsif should_space_evenly %}MegaMenu--spacingEvenly{% endif %} {% if push_image_count == 0 and link.links.size > 4 %}MegaMenu--grid{% endif %}" aria-hidden="true" {{ block.shopify_attributes }}>
                       <div class="MegaMenu__Inner">
+                        {% render 'icon-caret' %}
                         {%- for sub_link in link.links -%}
                           <div class="MegaMenu__Item MegaMenu__Item--fit">
                             <a href="{{ sub_link.url }}" class="MegaMenu__Title Heading Text--subdued u-h7" style="text-decoration: none;">{{ sub_link.title | title }}</a>
@@ -302,7 +303,7 @@ a:hover
                                 {%- for sub_sub_link in sub_link.links -%}
                                   <li class="Linklist__Item">
                                     <a href="{{ sub_sub_link.url }}" class="Link Link--secondary" style="text-decoration: none;">{{ sub_sub_link.title | escape }}</a>
-                                     {% render 'icon-caret' %}
+                                     
                                   </li>
                                 {%- endfor -%}
                               </ul>
