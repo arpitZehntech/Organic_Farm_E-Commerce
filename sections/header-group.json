@@ -66,7 +66,7 @@
         "8abfb3ad-996e-4e43-ab92-83fa091442f9": {
           "type": "mega_menu",
           "settings": {
-            "navigation_mega_menu": "pages",
+            "navigation_mega_menu": "CATEGORIES",
             "push_1_heading": "Example heading",
             "push_1_subheading": "Example sub-heading",
             "push_1_url": "",
