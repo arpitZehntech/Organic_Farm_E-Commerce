@@ -32,6 +32,7 @@
         "06aee53d-57c7-4fc7-8142-f104ac1c9c3d": {
           "type": "mega_menu",
           "settings": {
+            "navigation_mega_menu": "",
             "push_1_heading": "Example heading",
             "push_1_subheading": "Example sub-heading",
             "push_1_url": ""
@@ -41,6 +42,7 @@
       "block_order": [
         "06aee53d-57c7-4fc7-8142-f104ac1c9c3d"
       ],
+      "disabled": true,
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
@@ -61,6 +63,18 @@
     "new-section": {
       "type": "new-section",
       "settings": {
+        "logo_position": "middle-left",
+        "navigation_menu": "main-menu",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "",
+        "menu_color_scheme": "",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     }
   },
