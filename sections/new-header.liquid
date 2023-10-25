@@ -26,18 +26,30 @@
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
-
-<style>
-  header-drawer {
-    justify-self: start;
+<style> 
+  header-drawer { 
+    justify-self: start; 
     margin-left: -1.2rem;  
   }
      
 a:hover 
-  {color: rgb(107,169,0);
+  { 
+  color:  rgb(107,169,0);
    font-weight: bolder;
   }
+     
+.header__icon--account {
+  /* Your regular styles for the header__icon--account class here */
+}
 
+.header__icon--account:hover {
+  /* Define your hover styles here */
+  /* For example, you can change the background color or any other property */
+  background-color: #FF5733; /* Change to your desired hover color */
+  color: #FFFFFF; /* Change text color on hover if needed */
+}
+ 
+  
   {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
     .scrolled-past-header .header__heading-logo-wrapper {
       width: 75%;
@@ -88,7 +100,7 @@ a:hover
     .list-menu__item--link {
       padding-bottom: 0.5rem;
       padding-top: 0.5rem;
-    }
+    } 
   }
 
 </style>
