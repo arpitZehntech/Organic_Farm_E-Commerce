@@ -8,23 +8,8 @@
   <link rel="stylesheet" href="{{ 'component-loading-overlay.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
   <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="{{ 'new-header.css' | asset_url }}">
+    {% comment %} <link rel="stylesheet" href="{{ 'new-header.css' | asset_url }}"> {% endcomment %}
   <noscript>{{ 'component-mega-menu.css' | asset_url | stylesheet_tag }}</noscript>
-
-  
-    {%- comment -%}
---------------------------------------------------------------------------------------------------------------------
-PRESTIGE CSS
---------------------------------------------------------------------------------------------------------------------
-{%- endcomment -%}
-
-      <link rel="stylesheet" href="{{ 'assetprestige.css' | asset_url }}">
-
-    {%- comment -%}
---------------------------------------------------------------------------------------------------------------------
-PRESTIGE CSS
---------------------------------------------------------------------------------------------------------------------
-{%- endcomment -%}
 
 {%- if settings.cart_type == "drawer" -%}
   {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
