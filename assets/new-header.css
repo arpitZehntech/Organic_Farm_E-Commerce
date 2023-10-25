@@ -7921,7 +7921,7 @@ select::-ms-expand {
 @media screen and (min-width: 1240px) {
   #shopify-product-reviews {
     margin-right: 100px !important; } }
-.Search {
+/* .Search {
   display: block;
   padding: 30px 24px; }
 
@@ -7994,7 +7994,7 @@ select::-ms-expand {
       stroke-width: 1.25px; }
 
   .Search__Results {
-    margin-top: 75px; } }
+    margin-top: 75px; } } */
 @-webkit-keyframes shopTheLookDotKeyframe {
   0% {
     -webkit-transform: scale(1);
