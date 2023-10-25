@@ -245,6 +245,7 @@ a:hover
 
         {%- for block in section.blocks -%}
           {%- if block.type == 'mega_menu' -%}
+               {% render 'icon-caret' %}
             {%- assign mega_menu_names = mega_menu_names | append: block.settings.navigation_mega_menu | append: ',' -%}
           {%- endif -%}
         {%- endfor -%}
@@ -292,7 +293,7 @@ a:hover
                     {%- endif -%}
 
                     <div class="MegaMenu {% if push_image_count != 0 and link.links.size == 0 %}MegaMenu--spacingCenter{% elsif should_space_evenly %}MegaMenu--spacingEvenly{% endif %} {% if push_image_count == 0 and link.links.size > 4 %}MegaMenu--grid{% endif %}" aria-hidden="true" {{ block.shopify_attributes }}>
-                       {% render 'icon-caret' %}
+                    
                       <div class="MegaMenu__Inner">
                        
                         {%- for sub_link in link.links -%}
