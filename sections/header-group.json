@@ -32,7 +32,6 @@
         "06aee53d-57c7-4fc7-8142-f104ac1c9c3d": {
           "type": "mega_menu",
           "settings": {
-            "navigation_mega_menu": "",
             "push_1_heading": "Example heading",
             "push_1_subheading": "Example sub-heading",
             "push_1_url": ""
@@ -42,7 +41,6 @@
       "block_order": [
         "06aee53d-57c7-4fc7-8142-f104ac1c9c3d"
       ],
-      "disabled": true,
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
@@ -60,44 +58,15 @@
         "padding_bottom": 20
       }
     },
-    "new-section": {
-      "type": "new-section",
-      "blocks": {
-        "8abfb3ad-996e-4e43-ab92-83fa091442f9": {
-          "type": "mega_menu",
-          "settings": {
-            "navigation_mega_menu": "CATEGORIES",
-            "push_1_heading": "Example heading",
-            "push_1_subheading": "Example sub-heading",
-            "push_1_url": "",
-            "push_2_heading": "Example heading",
-            "push_2_subheading": "Example sub-heading",
-            "push_2_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "8abfb3ad-996e-4e43-ab92-83fa091442f9"
-      ],
+    "new-header": {
+      "type": "new-header",
       "settings": {
-        "logo_position": "middle-left",
-        "navigation_menu": "main-menu",
-        "sticky_header_type": "on-scroll-up",
-        "show_line_separator": false,
-        "color_scheme": "",
-        "menu_color_scheme": "",
-        "enable_country_selector": false,
-        "enable_language_selector": true,
-        "mobile_logo_position": "center",
-        "margin_bottom": 0,
-        "padding_top": 12,
-        "padding_bottom": 12
       }
     }
   },
   "order": [
     "announcement-bar",
     "header",
-    "new-section"
+    "new-header"
   ]
 }
