@@ -62,6 +62,23 @@
     },
     "new-section": {
       "type": "new-section",
+      "blocks": {
+        "8abfb3ad-996e-4e43-ab92-83fa091442f9": {
+          "type": "mega_menu",
+          "settings": {
+            "navigation_mega_menu": "pages",
+            "push_1_heading": "Example heading",
+            "push_1_subheading": "Example sub-heading",
+            "push_1_url": "",
+            "push_2_heading": "Example heading",
+            "push_2_subheading": "Example sub-heading",
+            "push_2_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "8abfb3ad-996e-4e43-ab92-83fa091442f9"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "navigation_menu": "main-menu",
